@@ -1,0 +1,12 @@
+h1,#form1{
+    color: aliceblue;
+    text-align: left;
+}
+table,td{
+    background-color: black;
+    color: aliceblue;
+    border: 1px solid;
+}
+body{
+    background-color: black;
+}

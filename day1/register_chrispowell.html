@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+
+<body bgcolor="purple"> <!--Inline CSS added to html tag as an attribute-->
+    <!--InternaL CSS added in style tag-->
+    <style>
+        body{
+            /*single line comment; */
+            background-color: rgb(252, 4, 4);
+        }
+        #form1{
+            background-color: aqua;
+            text-align: center;
+        }
+    </style>
+    <h1>Hello World!!!!Welcome to HTML</h1>
+    <!--Sibling Tag -->
+    <!-- HTML Element -->
+    <h2>Day 1 of HTML</h2> <!-- Sibling Tag -->
+    <script type="text/javascript">
+        function ShowHideSpouse(){
+            var married = document.getElementById("married");
+            var spouse = document.getElementById("spouse");
+            var spouseText = document.getElementById("spouseText");
+            spouse.style.display = married.checked ? "block" : "none";
+            spouseText.style.display = married.checked ? "block" : "none";
+        }
+    </script>
+    <form action="signup.html" method="GET" id="form1">
+        <table border="5" id="table1">
+            <thead>
+                <tr>
+                    <th>Key</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>First Name :</td>
+                    <td><input name="fName" type="text" id="fName" required /></td>
+                </tr>
+                <tr>
+                    <td>Last Name :</td>
+                    <td><input name="lName" type="text" id="lName" required /></td>
+                </tr>
+                <tr>
+                    <td>Gender :</td>
+                    <td><input name="gender" type="radio" id="m" required />
+                        <label for="m">Male</label>
+                        <input name="gender" type="radio" id="f" required />
+                        <label for="f">Female</label>
+                        <input name="gender" type="radio" id="nb" required />
+                        <label for="nb">Non-Binary</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pronouns : </td>
+                    <td>
+                        <select name="pronouns" id="pronouns">
+                            <option value="blank"></option>
+                            <option value="He/Him">He/Him</option>
+                            <option value="He/They">He/They</option>
+                            <option value="She/Her">She/Her</option>
+                            <option value="She/They">She/They</option>
+                            <option value="They/Them">They/Them</option>
+                            <option value="other">Other/Not Listed</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address :</td>
+                    <td><textarea name="address" id="address" cols="40" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td>DOB :</td>
+                    <td>
+                        <input name="DOB" type="date" id="dob" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email ID :</td>
+                    <td><input name="Email ID" type="email" id="email" required /></td>
+                </tr>
+                <tr>
+                    <td>Mobile :</td>
+                    <td><input name="Mobile" type="number" id="phone" required /></td>
+                </tr>
+                <tr>
+                    <td>Twitter :</td>
+                    <td><input name="Twitter" type="text" id="twitter" required /></td>
+                </tr>
+                <tr>
+                    <td>URL :</td>
+                    <td><input name="URL" type="url" id="url" required /></td>
+                </tr>
+                <tr>
+                    <td>Profile (File Upload):</td>
+                    <td><input name="Profile" type="file" id="profile" required /></td>
+                </tr>
+                <tr>
+                    <td>Marital Status :</td>
+                    <td><input type="radio" name="marital" id="married" onclick="ShowHideSpouse()">
+                        <label for="married">Married</label>
+                        <input type="radio" name="marital" id="unmarried" onclick="ShowHideSpouse()">
+                        <label for="unmarried">Unmarried</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="spouse" style="display: none">
+                            Spouse Name :
+                        </div>
+                    </td>
+                    <td>
+                        <div id="spouseText" style="display: none">
+                            <select name="Honorific" id="honorific">
+                                <option value="blank"></option>
+                                <option value="mr">Mr.</option>
+                                <option value="ms">Ms.</option>
+                                <option value="mrs">Mrs.</option>
+                                <option value="mx">Mx.</option>
+                                <option value="miss">Miss.</option>
+                                <option value="other">Other/Not Listed</option>
+                            </select>
+                            <input type="text" id="spousename">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="reset" value="Clear" onclick="ShowHideSpouse()">
+                        <input type="submit" name="register" id="register" value="Register"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>

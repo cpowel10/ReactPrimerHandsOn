@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Internal JS-->
+    <script>
+        var value = 50;
+        function a(){
+            console.log("value: "+value);
+        }
+        function b(){
+            console.log("value: "+value)
+        }
+        a();
+        b();
+    </script>
+    <p id="demo">My Heading</p>
+
+    <!--Inline JS-->
+    <!-- <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>
+        Click Me!
+    </button> -->
+
+    <button type="button" onclick=button1()>
+        Click Me!
+    </button>
+    <script src="day2.js"></script>
+</body>
+</html>

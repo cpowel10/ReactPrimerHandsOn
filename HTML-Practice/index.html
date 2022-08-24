@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Practice</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <h1>Survey Sheet</h1>
+    <h2>
+        <form action="signup.html" method="get" id="form1">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>First Name</td>
+                        <td><input type="text" name="FirstName" id="first"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" name="LastName" id="last"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>Male<input type="radio" name="Gender" id="m">
+                            Female<input type="radio" name="Gender" id="f">
+                            Non-Binary<input type="radio" name="Gender" id="nb">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><textarea name="Address" id="address" cols="30" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>DOB</td>
+                        <td><input type="date" name="DOB" id="dob"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" name="Email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number</td>
+                        <td><input type="number" name="Phone" id="phone"></td>
+                    </tr>
+                    <tr>
+                        <td>Twitter</td>
+                        <td><input type="text" name="Twitter" id="twitter"></td>
+                    </tr>
+                    <tr>
+                        <td>Resume</td>
+                        <td><input type="file" name="Resume" id="resume"></td>
+                    </tr>
+                    <!-- <tr>
+                        <td>Image</td>
+                        <td><input type="image" src="sample-image.webp" alt="Porn.jpeg" width="300" height="400"></td>
+                    </tr> -->
+                    <tr>
+                        <td>Gif</td>
+                        <td>
+                            <video width="320" height="240" autoplay loop muted>
+                                <source src="Gif.mp4" type="video/mp4" />
+                            </video>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="reset" value="Clear">
+            <input type="submit" value="Submit">
+        </form>
+    </h2>
+    <!-- <iframe src="gif.mp4" width="420" height="345"></iframe> -->
+</body>
+</html>

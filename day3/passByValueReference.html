@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Pass By Value
+        function Passbyvalue(a,b){
+            let tmp;
+            tmp = b;
+            b = a;
+            a = tmp;
+            console.log(`Inside Pass by value
+            function -> a = ${a} b = ${b}`);
+        }
+
+        let a = 1;
+        let b = 2;
+        console.log(`Before Pass by value
+            function -> a = ${a} b = ${b}`);
+
+        Passbyvalue(a,b);
+
+        console.log(`After Pass by value
+            function -> a = ${a} b = ${b}`);
+
+        //Pass By Reference
+        function PassbyReference(obj){
+            let tmp = obj.a;
+            obj.a = obj.b;
+            obj.b = tmp;
+            console.log(`Inside Pass by Reference
+            function -> a = ${obj.a} b = ${obj.b}`);
+        }
+
+        let obj = new Object();
+        obj.a = 10;
+        obj.b = 20;
+
+        console.log(`Before Pass by Reference
+            function -> a = ${obj.a} b = ${obj.b}`);
+
+        PassbyReference(obj);
+
+        console.log(`After Pass by Reference
+            function -> a = ${obj.a} b = ${obj.b}`);
+    </script>
+</body>
+</html>

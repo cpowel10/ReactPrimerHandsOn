@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        employee = {};
+        document.write(typeof(employee)+"<br>");
+
+        employee = new Object();
+        employee.name = "ABC";
+        employee.id = 123;
+        employee.salary = 6969
+        document.write("<br>employee:<br>")
+        for(let x in employee){
+            document.write(employee[x]+"<br>");
+        }
+
+        document.write("<br>empl:<br>")
+        empl = { id: 200, name: "Chris", salary: 80085};
+        for(let x in empl){
+            document.write(empl[x]+"<br>");
+        }
+
+        function emp(id,name,salary){
+            this.id = id;
+            this.name = name;
+            this.salary= salary;
+        }
+        e = new emp(103,"Squall", 25670);
+
+        document.write("<br>e:<br>"+ e.id + "<br>" + e.name + "<br>" + e.salary + "<br>");
+        document.write("typeof emp: "+typeof(emp)+"<br>");
+        document.write("typeof e: "+typeof(e)+"<br>");
+    </script>
+</body>
+</html>

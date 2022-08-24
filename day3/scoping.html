@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getCube(n){
+            console.log("n is = "+n)
+            console.log("a is = "+a+" Inside getCube");
+            return(n*n*n);
+        }
+        a = 25;
+        function myfunc(){
+            b = 15;    //Global variable
+            var c = 15 //Local variable
+            console.log("b inside myfunc = "+b);
+            console.log("a is = "+a+" Inside myfunc");
+        }
+        myfunc();
+        console.log("b outside myfunc = "+b);
+
+        //document.write(getCube(26578));
+
+        //document.write(getCube(n));
+    </script>
+</body>
+</html>
