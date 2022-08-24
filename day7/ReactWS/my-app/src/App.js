@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Another from './another';
+import HelloWorld from './HelloWorld';
 
 function App() {
   const Car = {
@@ -25,6 +27,8 @@ function App() {
         <div>
           <p id='carPrint'>my car is a <b><i>{Car.year} {Car.brand} {Car.model}</i></b></p>
         </div>
+        <Another/>
+        <HelloWorld/>
       </header>
     </div>
   );
