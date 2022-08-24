@@ -5,6 +5,8 @@ import HelloWorld from './HelloWorld';
 import HelloMessage from './hellomessage';
 import Counter from './counter';
 import Alert from './alert';
+import Replace from './replace';
+import TextBox from './textbox';
 
 function App() {
   const Car = {
@@ -33,6 +35,7 @@ function App() {
         <HelloMessage name='ABC' message='Hello World'/>
         <Counter/>
         <Alert/>
+        <Replace/>
       </header>
     </div>
   );
