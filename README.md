@@ -1,5 +1,5 @@
 # ReactPrimerHandsOn
-This is the collection of the Hands-on work for the React Primer course including:
+## This is the collection of the Hands-on work for the React Primer course including:
 * HTML
 * CSS
 * Javascript
