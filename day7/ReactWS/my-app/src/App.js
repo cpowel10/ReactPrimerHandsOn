@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import Another from './another';
 import HelloWorld from './HelloWorld';
+import HelloMessage from './hellomessage';
+import Counter from './counter';
+import Alert from './alert';
 
 function App() {
   const Car = {
@@ -24,11 +27,12 @@ function App() {
         >
           Learn React
         </a>
-        <div>
-          <p id='carPrint'>my car is a <b><i>{Car.year} {Car.brand} {Car.model}</i></b></p>
-        </div>
         <Another/>
         <HelloWorld/>
+        <HelloMessage name='Chris' message='Welcome to React!!!'/>
+        <HelloMessage name='ABC' message='Hello World'/>
+        <Counter/>
+        <Alert/>
       </header>
     </div>
   );
